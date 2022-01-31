@@ -1,5 +1,6 @@
 package one.digitalinnovation.gof.Singleton;
 
+import one.digitalinnovation.gof.Facade.Facade;
 import one.digitalinnovation.gof.Singleton.SingletonEager;
 import one.digitalinnovation.gof.Singleton.SingletonLazy;
 import one.digitalinnovation.gof.Singleton.SingletonLazyHolder;
@@ -25,7 +26,10 @@ public class Test {
         lazyHolder = SingletonLazyHolder.getInstancia();
         System.out.println(lazyHolder);
 
+        // Facade
 
+        Facade facade = new Facade();
+        facade.migrarCliente("Matheus", "06150060");
 
 
     }
